@@ -1,0 +1,141 @@
+#heading{
+    display: block;
+    text-align: center;
+}
+
+#container{
+    height: 370px;
+    width: 610px;
+    border: 2px solid black;
+    display: grid;
+    place-items: center;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    margin: auto;
+}
+
+#face{
+    width: 200px;
+    height: 200px;
+    background-color: orange;
+    border-radius: 50%;
+    animation-name: ColorAni;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    margin: 25px;
+}
+
+#face1{
+    width: 200px;
+    height: 200px;
+    background-color: orange;
+    border-radius: 50%;
+    animation-name: ColorAni1;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    margin: 25px;
+}
+
+.outer{
+    height: 250px;
+    width: 250px;
+    border: 2px solid black;
+    margin: 5px;
+    display: inline-block;
+    animation-name: borderAni;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    margin: 25px;
+    border: 2px dashed black;
+}
+
+.outer1{
+    height: 250px;
+    width: 250px;
+    border: 2px solid black;
+    margin: 5px;
+    display: inline-block;
+    animation-name: borderAni1;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    margin: 25px;
+    border: 2px dashed black;
+}
+
+.eye{
+    height: 25px;
+    width: 25px;
+    background-color: black;
+    border-radius: 50%;
+}
+
+#mouth{
+    height: 30px;
+    width: 100px;
+    background-color: brown;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    position: relative;
+    top: 90px;
+    left: 50px;
+}
+
+#left{
+    position: relative;
+    top: 40px;
+    left: 125px;
+}
+
+#right{
+    position: relative;
+    top: 15px;
+    left: 50px;
+}
+
+@keyframes ColorAni{
+    from{
+        background-color: orange;
+    }
+    to{
+        background-color: orangered;
+    }
+}
+
+@keyframes ColorAni1{
+    from{
+        background-color: green;
+    }
+    to{
+        background-color: greenyellow;
+    }
+}
+
+@keyframes borderAni{
+    from{
+        border-color: orange;
+    }
+    to{
+        border-color: orangered;
+    }
+}
+
+@keyframes borderAni1{
+    from{
+        border-color: green;
+    }
+    to{
+        border-color: greenyellow;
+    }
+}
