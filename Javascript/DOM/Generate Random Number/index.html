@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form action="#">
+        <fieldset>
+            <legend>Random Number Generator</legend>
+            <table>
+                <tr>
+                    <td>
+                        <label for="num">Enter Range</label>
+                    </td>
+                    <td>
+                        <input type="number" name="num" id="num">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="qty">Enter Quantity</label>
+                    </td>
+                    <td>
+                        <input type="number" name="qty" id="qty">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <button type="button" class="Generate">Generate</button>
+                        <button type="reset" class="reset">Refresh</button>
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+    </form>
+    <fieldset class="Generated_box">
+        <legend>Generated Numbers</legend>
+    </fieldset>
+    <script src="app.js"></script>
+</body>
+</html>
