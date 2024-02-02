@@ -1,0 +1,44 @@
+body{
+    background-image: url(https://images.unsplash.com/photo-1502790671504-542ad42d5189?auto=format&fit=crop&w=2560&q=80);
+    background-size: cover;
+}
+
+.nav{
+    margin: auto;
+    width: 90%;
+    height: 50px;
+    border-radius: 30px;
+    background-color: rgba(26, 23, 23, 0.336);
+    backdrop-filter: blur(10px);
+    display: flex;
+}
+
+h2{
+    color: white;
+    margin: 0px;
+    margin-top: 11px;
+    margin-left: 20px;
+}
+
+ul{
+    display: flex;
+    gap: 25px;
+    margin: 0px;
+    margin-left: 42rem;
+}
+
+li{
+    padding-top: 15px;
+    list-style: none;
+}
+
+a{
+    color: orangered;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover{
+    color: white;
+    text-decoration: underline solid white;
+}
