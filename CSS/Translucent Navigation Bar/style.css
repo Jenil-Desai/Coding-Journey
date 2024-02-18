@@ -11,6 +11,11 @@ body{
     background-color: rgba(26, 23, 23, 0.336);
     backdrop-filter: blur(10px);
     display: flex;
+    justify-content: space-between;
+}
+
+.links{
+    margin-right: 1rem;
 }
 
 h2{
@@ -24,7 +29,6 @@ ul{
     display: flex;
     gap: 25px;
     margin: 0px;
-    margin-left: 42rem;
 }
 
 li{
