@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 100%;
+    height: inherit;
+    background-color: #20364b;
+}
+
+.container{
+    margin: 0 30px;
+}
+
+.navigation{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.navigation ul {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    list-style: none;
+    font-weight: lighter;
+    text-align: center;
+}
+
+.navigation ul li{
+    padding-top: 1.2rem;
+}
+
+
+.navigation ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+.navigation ul li select{
+    background: none;
+    appearance: none;
+    -webkit-appearance: none;
+    border: none;
+    color: white;
+    font-size: 16px;
+    font-family: 'Times New Roman', Times, serif;
+    width: 72px;
+    cursor: pointer;
+}
+
+#search-container{
+    padding-top: 0.5rem;
+}
+
+.search{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #fbc224;
+    cursor: pointer;
+    border: 5px solid #6f6b3b;
+    margin: auto;
+}
+
+.search i{
+    padding-top: 20%;
+}
+
+.hero-container{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin-top: 60px;
+    margin-left: 9%;
+}
+.hero-container .text h1{
+    font-size: 4rem;
+}
+
+.yellow{
+    color: #fbc224;
+}
+
+.white{
+    color: white;
+}
+
+.hero-container .text .para{
+    width: 350px;
+    text-align: start;
+    line-height: 1.5rem;
+    color: white;
+    font-size: smaller;
+    margin-top: 15px;
+    margin-bottom: 15px;
+
+}
+
+.hero-container .text .form{
+    display: grid;
+    grid-template-rows: 50% 50% 50%;
+}
+
+.hero-container .text .form input{
+    width: 250px;
+    height: 35px;
+    border: none;
+    border-radius: 45px;
+    padding-left: 10px;
+    box-shadow: none;
+}
+
+.hero-container .text .form button{
+    width: 100px;
+    height: 35px;
+    border: none;
+    border-radius: 45px;
+    padding: 10px;
+    box-shadow: none;
+    background-color: #fbc224;
+    color: #20364b;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+.hero-container .image{
+    position: relative;
+}
+
+.hero-container .image img{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.hero-container .image #1{
+    z-index: 0;
+}
+
+.hero-container .image #2{
+    z-index: 1;
+}

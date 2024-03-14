@@ -1,0 +1,37 @@
+<%- include("includes/head.ejs") %>
+<body class="pt-5">
+  <div class="fixed-top navbar pb-3 mt-2 ms-2 me-2">
+    <meta http-equiv="refresh" content="30">
+    <h1 class="position-absolute top-0 start-0 mb-3 ms-3">Scribble Pulse</h1>
+    <a href="/posts/New" class="position-absolute top-0 end-0"><i class="fa-solid fa-circle-plus"></i></a>
+  </div>
+  <div class="container-lg mt-5 pt-3"> <!-- Use container-lg for larger screens -->
+    <div class="row justify-content-center"> <!-- Center the content -->
+      <div class="col-md-6"> <!-- Use col-md-6 for 50% width on medium and larger screens -->
+        <% for(let post of posts) { %>
+          <div class="card text-left mt-3">
+            <div class="card-header">
+              <%= post.username %>
+            </div>
+            <div class="card-body">
+              <p class="card-text"><%= post.content %></p>
+            </div>
+            <div class="card-footer text-body-secondary">
+              <div class="btn-group" role="group" aria-label="Basic example">
+                <button type="button" class="btn custom-outline-btn" onclick="location.href = '/posts/<%= post.id %>'">View</button>
+                <button type="button" class="btn custom-outline-btn" onclick="location.href = '/posts/<%= post.id %>/edit'">Edit</button>
+                <form action="/posts/<%= post.id %>?_method=DELETE" method="post">
+                  <button type="submit" class="btn custom-outline-btn">Delete</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        <% } %>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid text-center">
+    <p class="text-center text-white">Made With <i class="fa-solid fa-heart"></i> By Jenil Desai</p>
+  </div>
+</body>
+</html>
