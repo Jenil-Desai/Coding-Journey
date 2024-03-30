@@ -1,0 +1,29 @@
+.Product {
+  text-align: center;
+  border: 1px solid black;
+  border-radius: 25px;
+}
+
+.Product .Heading {
+  font-weight: bold;
+  margin: 0;
+}
+
+.features {
+  list-style: none;
+  display: inline;
+  padding: 0px;
+}
+
+.features li {
+  padding: 10px 0px;
+}
+
+.Prices {
+  display: flex;
+  justify-content: space-around;
+  font-weight: bold;
+  background-color: #e4c770;
+  width: 100%;
+  border-radius: 0px 0px 25px 25px;
+}
