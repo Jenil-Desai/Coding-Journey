@@ -1,0 +1,16 @@
+.Ticket {
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  border-radius: 8px;
+  border: 1px solid transparent;
+  font-family: inherit;
+  background-color: pink;
+  color: #1a1a1a;
+  font-weight: bolder;
+  margin-bottom: 10px;
+  transition: border-color 0.25s;
+}
+
+.Ticket:hover {
+  border-color: #646cff;
+}
