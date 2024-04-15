@@ -22,7 +22,7 @@ export default function SearchBox({ updateInfo }) {
   const [longitude, setLongitude] = useState(null);
 
   const API_URL = "https://api.openweathermap.org/data/2.5/weather";
-  const API_KEY = "f20ce835f0171731f6b0cf88b7cd870d";
+  const API_KEY = "API_KEY";
 
   useEffect(() => {
     // Function to get user's geolocation
