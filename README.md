@@ -4,17 +4,28 @@ Welcome to **My Coding Odyssey**, where I embark on thrilling coding adventures,
 
 ## 📁 Folder Structure
 
-
 - **Language**: The hub of language.
   - **Projects**: Showcasing my creativity and problem-solving skills.
     - **Notes**: Insights and epiphanies captured for future reference.
-     - **Files**: Miscellaneous resources and downloads.
+    - **Files**: Miscellaneous resources and downloads.
 
 ## 🌌 What Awaits You
 
 📂 **Organized Projects:** Journey through diverse coding realms, from web wizardry to Pythonic spells. Each project is a new universe to explore.
 
 📝 **Detailed READMEs:** Each project comes with its own README, guiding you through its purpose and how to engage with it.
+
+## 🆚 Versions Releases
+
+You Can Checkout The Full Version Info On Notion Page. Version Info Includes following Info :
+
+- Version Name
+- Version Code
+- Version Changes
+- Version Release Date
+- Detailed Past Version Changes
+
+Notion Version Release Site : [Click To View](https://decorous-boar-5cd.notion.site/Version-Releases-My-Coding-Odyssey-5fbb4359497c4f9293042757ca52075a?pvs=4)
 
 ## 🛰️ Getting Started
 
