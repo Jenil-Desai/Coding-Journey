@@ -25,7 +25,7 @@ You Can Checkout The Full Version Info On Notion Page. Version Info Includes fol
 - Version Release Date
 - Detailed Past Version Changes
 
-Notion Version Release Site : [Click To View](https://decorous-boar-5cd.notion.site/Version-Releases-My-Coding-Odyssey-5fbb4359497c4f9293042757ca52075a?pvs=4)
+Notion Version Release Site : [Click To View](https://jenil-desai.notion.site/Version-Releases-My-Coding-Odyssey-5fbb4359497c4f9293042757ca52075a?pvs=4)
 
 ## 🛰️ Getting Started
 
