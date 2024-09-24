@@ -8,7 +8,7 @@ fn find_first_a(s: String) -> Option<i32> {
 }
 
 fn main() {
-    let my_str = String::from("");
+    let my_str = String::from("Vishwa bby");
     match find_first_a(my_str) {
         Some(index) => println!("The First Letter : {}", index),
         None => println!("There Was No Letter"),

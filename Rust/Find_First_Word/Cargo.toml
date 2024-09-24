@@ -1,0 +1,6 @@
+[package]
+name = "Find_First_Word"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
