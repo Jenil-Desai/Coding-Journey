@@ -1,6 +1,6 @@
-# 🚀 MyCodingOdyssey 🌟
+# 🚀 Coding Journey 🌟
 
-Welcome to **My Coding Odyssey**, where I embark on thrilling coding adventures, exploring a galaxy of programming languages and technologies while crafting unique projects!
+Welcome to **My Coding Journey**, where I embark on thrilling coding adventures, exploring a galaxy of programming languages and technologies while crafting unique projects!
 
 ## 📁 Folder Structure
 
@@ -42,4 +42,4 @@ Notion Version Release Site : [Click To View](https://jenil-desai.notion.site/Ve
 
 This repository is open-source and available under the **MIT License**. Feel free to harness the power of code!
 
-🚀 Blast off into my coding odyssey and let's code our way to the stars! 🌟🌠
+🚀 Blast off into my coding Journey and let's code our way to the stars! 🌟🌠
