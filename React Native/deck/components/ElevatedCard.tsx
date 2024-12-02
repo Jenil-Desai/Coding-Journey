@@ -1,30 +1,32 @@
-import {ScrollView, StyleSheet, Text, View} from 'react-native';
+import {
+  Linking,
+  ScrollView,
+  StyleSheet,
+  Text,
+  TouchableOpacity,
+  View,
+} from 'react-native';
 import React from 'react';
 import HeadingTexts from './HeadingTexts';
+import {technologies} from '../data/technologies';
 
 export default function ElevatedCard() {
+  function openWebsite(url: string) {
+    Linking.openURL(url);
+  }
+
   return (
     <View>
-      <HeadingTexts text="Elevated Cards" />
+      <HeadingTexts text="Intresting Technologies" />
       <ScrollView style={styles.container} horizontal={true}>
-        <View style={[styles.card, styles.cardElevated]}>
-          <Text>Tap</Text>
-        </View>
-        <View style={[styles.card, styles.cardElevated]}>
-          <Text>Me</Text>
-        </View>
-        <View style={[styles.card, styles.cardElevated]}>
-          <Text>To</Text>
-        </View>
-        <View style={[styles.card, styles.cardElevated]}>
-          <Text>Scroll</Text>
-        </View>
-        <View style={[styles.card, styles.cardElevated]}>
-          <Text>More</Text>
-        </View>
-        <View style={[styles.card, styles.cardElevated]}>
-          <Text>✨</Text>
-        </View>
+        {technologies.map((technology, idx) => (
+          <TouchableOpacity
+            onPress={() => openWebsite(technology.websiteUrl)}
+            style={styles.card}
+            key={idx}>
+            <Text style={styles.cardText}>{technology.name}</Text>
+          </TouchableOpacity>
+        ))}
       </ScrollView>
     </View>
   );
@@ -42,9 +44,11 @@ const styles = StyleSheet.create({
     height: 100,
     borderRadius: 4,
     margin: 8,
-  },
-  cardElevated: {
-    backgroundColor: '#CAD5E2',
+    backgroundColor: '#7764e4',
     elevation: 4,
+  },
+  cardText: {
+    color: '#fff',
+    fontWeight: 300,
   },
 });

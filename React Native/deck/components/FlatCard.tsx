@@ -1,21 +1,31 @@
-import {View, Text, StyleSheet} from 'react-native';
+import {
+  View,
+  Text,
+  StyleSheet,
+  TouchableHighlight,
+  Linking,
+} from 'react-native';
 import React from 'react';
 import HeadingTexts from './HeadingTexts';
+import {bestProjects} from '../data/bestProjects';
 
 export default function FlatCard() {
+  function openWebsite(url: string) {
+    Linking.openURL(url);
+  }
+
   return (
     <View>
-      <HeadingTexts text="Flat Cards" />
+      <HeadingTexts text="Best Projects" />
       <View style={styles.container}>
-        <View style={[styles.card, styles.cardOne]}>
-          <Text>Red</Text>
-        </View>
-        <View style={[styles.card, styles.cardTwo]}>
-          <Text>Cyan</Text>
-        </View>
-        <View style={[styles.card, styles.cardThree]}>
-          <Text>Violet</Text>
-        </View>
+        {bestProjects.map((bestProject, idx) => (
+          <TouchableHighlight
+            onPress={() => openWebsite(bestProject.websiteUrl)}
+            style={styles.card}
+            key={idx}>
+            <Text style={styles.cardText}>{bestProject.name}</Text>
+          </TouchableHighlight>
+        ))}
       </View>
     </View>
   );
@@ -37,14 +47,10 @@ const styles = StyleSheet.create({
     height: 100,
     borderRadius: 4,
     margin: 8,
+    backgroundColor: '#7764e4',
   },
-  cardOne: {
-    backgroundColor: '#EF5354',
-  },
-  cardTwo: {
-    backgroundColor: '#50BDD4',
-  },
-  cardThree: {
-    backgroundColor: '#5DA3FA',
+  cardText: {
+    color: '#fff',
+    fontWeight: 300,
   },
 });

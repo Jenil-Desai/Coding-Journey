@@ -11,6 +11,7 @@ import FlatCard from './components/FlatCard';
 import ElevatedCard from './components/ElevatedCard';
 import FancyCard from './components/FancyCard';
 import ActionCard from './components/ActionCard';
+import ProjectList from './components/ProjectList';
 
 function App(): React.JSX.Element {
   const isDarkMode = useColorScheme() === 'dark';
@@ -22,10 +23,11 @@ function App(): React.JSX.Element {
   return (
     <SafeAreaView style={backgroundStyle}>
       <ScrollView>
+        <ActionCard />
         <FlatCard />
         <ElevatedCard />
+        <ProjectList />
         <FancyCard />
-        <ActionCard />
       </ScrollView>
     </SafeAreaView>
   );

@@ -16,7 +16,7 @@ export default function ActionCard() {
 
   return (
     <View>
-      <HeadingTexts text="Action Card" />
+      <HeadingTexts text="Profile Card" />
       <View style={[styles.card, styles.elevatedCard]}>
         <View style={styles.headingContainer}>
           <Text style={styles.headingText}>Jenil Desai</Text>
@@ -38,12 +38,12 @@ export default function ActionCard() {
             <TouchableOpacity
               onPress={() => openWebsite('https://github.com/jenil-desai')}
               style={styles.profileLinks}>
-              <Text>GitHub Profile</Text>
+              <Text style={styles.profileLinkText}>GitHub Profile</Text>
             </TouchableOpacity>
             <TouchableOpacity
               onPress={() => openWebsite('https://linkedin.com/in/desaijenil')}
               style={styles.profileLinks}>
-              <Text>LinkedIn Profile</Text>
+              <Text style={styles.profileLinkText}>LinkedIn Profile</Text>
             </TouchableOpacity>
           </View>
         </View>
@@ -62,7 +62,7 @@ const styles = StyleSheet.create({
   },
   elevatedCard: {
     elevation: 3,
-    backgroundColor: '#FFF',
+    backgroundColor: '#fcd36a',
     shadowOffset: {
       width: 1,
       height: 1,
@@ -77,7 +77,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   headingText: {
-    color: '#000',
+    color: '#18181c',
     fontSize: 16,
     fontWeight: '600',
   },
@@ -88,6 +88,8 @@ const styles = StyleSheet.create({
     padding: 10,
   },
   cardDetails: {
+    color: '#18181c',
+    fontWeight: 500,
     textAlign: 'justify',
   },
   cardFooter: {
@@ -98,11 +100,11 @@ const styles = StyleSheet.create({
   },
   profileLinks: {
     fontSize: 16,
-    color: '#000',
-    backgroundColor: '#bde0fe',
-    borderColor: '#a2d2ff',
-    borderRadius: 5,
+    backgroundColor: '#e76951',
+    borderRadius: 30,
     padding: 10,
-    borderWidth: 2,
+  },
+  profileLinkText: {
+    color: '#fff',
   },
 });
