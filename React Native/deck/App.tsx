@@ -2,12 +2,13 @@ import React from 'react';
 import {
   SafeAreaView,
   ScrollView,
-  StatusBar,
   StyleSheet,
   useColorScheme,
 } from 'react-native';
 
 import {Colors} from 'react-native/Libraries/NewAppScreen';
+import FlatCard from './components/FlatCard';
+import ElevatedCard from './components/ElevatedCard';
 
 function App(): React.JSX.Element {
   const isDarkMode = useColorScheme() === 'dark';
@@ -18,13 +19,10 @@ function App(): React.JSX.Element {
 
   return (
     <SafeAreaView style={backgroundStyle}>
-      <StatusBar
-        barStyle={isDarkMode ? 'light-content' : 'dark-content'}
-        backgroundColor={backgroundStyle.backgroundColor}
-      />
-      <ScrollView
-        contentInsetAdjustmentBehavior="automatic"
-        style={backgroundStyle}></ScrollView>
+      <ScrollView>
+        <FlatCard />
+        <ElevatedCard />
+      </ScrollView>
     </SafeAreaView>
   );
 }
