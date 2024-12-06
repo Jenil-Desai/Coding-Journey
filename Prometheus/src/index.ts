@@ -1,11 +1,12 @@
 import client from "prom-client";
 import express from "express";
-import { requestCount } from "./monitoring/requestConter";
+import { activeUserCount, requestCount } from "./monitoring/requestConter";
 
 const app = express();
 
 app.use(express.json());
-app.use(requestCount);
+app.use(activeUserCount);
+// app.use(requestCount);
 
 app.get("/user", (req, res) => {
   res.send({
