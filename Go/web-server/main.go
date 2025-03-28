@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 	"net/http"
+	"web-server/api"
 	"web-server/handlers"
 )
 
@@ -11,6 +12,8 @@ func main() {
 
 	server.HandleFunc("/hello", handlers.HandleHello)
 	server.HandleFunc("/template", handlers.HandleTemplate)
+
+	server.HandleFunc("/Exhibition", api.Get)
 
 	fs := http.FileServer(http.Dir("./public"))
 	server.Handle("/", fs)
