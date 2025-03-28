@@ -22,11 +22,11 @@
             fetchpriority="high"></h1>
     <main>
         {{ range . }}
-        <article>
-            <h2>{{ .Title }}</h2>
-            <p>{{ .Description }}</p>
-            <img src="gallery/{{ .Image }}" alt="{{ .Title }}" width="300">
-        </article>
+            <article style="border-top: 10px solid {{ .Color }}">
+                <h2>{{ .Title }}</h2>
+                <p>{{ .Description }}</p>
+                <img src="gallery/{{ .Image }}" alt="{{ .Title }}" width="300">
+            </article>
         {{ end }}
     </main>
 </body>
